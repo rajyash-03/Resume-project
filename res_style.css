@@ -154,15 +154,15 @@ section:nth-child(2n + 1) {
   margin-bottom: 60px;
   padding-bottom: 30px;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 300px) {
   #my-image {
     height: 50% !important;
     width: 60% !important;
-    margin-top: 20px !important;
+    margin-top: 30px !important;
     opacity: 0.9;
   }
   #my-name .list li a {
-    margin-top: 600px !important;
+    margin-top: 60px !important;
   }
   #my-name {
     margin-top: 90px !important;
