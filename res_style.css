@@ -1,0 +1,597 @@
+@import url("https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@900&family=REM&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+body {
+  margin: 0px;
+  margin-top: -25px;
+
+  font-family: "Lisu Bosa", serif;
+
+  text-decoration: none;
+  font-family: "Young Serif", serif;
+}
+
+header {
+
+  background-image: url(img/lapbg.jpg);
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  opacity: 0.85;
+  background-position: center;
+  background-attachment: fixed;
+}
+@media screen and (max-width: 400px) {
+  #body-header {
+    height: 50vh;
+  }
+}
+
+nav {
+  color: white;
+}
+.list {
+  padding: 0px;
+  padding-top: 12px;
+  list-style: none;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.list li {
+  display: inline-block;
+  padding: 0px 0px 0px 15px;
+  font-size: 2rem;
+}
+.list li a {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+h1 {
+  font-family: s;
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-top: 90px;
+  text-decoration: solid;
+  font-weight: 1000;
+  font-size: 5rem;
+  margin-bottom: 0px;
+}
+
+.list li a:hover {
+  cursor: pointer;
+  display: inline-block;
+  color: rgb(150, 150, 150);
+  transition: color 0.3s;
+  border-bottom: solid 1px whitesmoke;
+  text-decoration: none;
+  
+}
+a :hover {
+  text-decoration: none;
+}
+
+.list li img {
+  block-size: 20px;
+  align-items: center;
+  backface-visibility: hidden;
+  background-blend-mode: lighten;
+}
+.list li a {
+  text-decoration: none;
+  margin: bottom -30px;
+}
+.social-icons li a img {
+  padding: 10px;
+  list-style: none;
+}
+.social-icons li a :hover {
+  box-shadow: 0px 0px 10px;
+  margin-top: -10px;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+
+section {
+  width: 100%;
+  /*height: 75vh;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section:nth-child(2n) {
+  background-color: rgb(143, 140, 140);
+}
+
+section:nth-child(2n + 1) {
+  background-color: rgb(255, 255, 255);
+}
+#about {
+  height: auto;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#my-image {
+  height: 14rem;
+  width: 14rem;
+  margin: auto;
+  margin-top: -16vh;
+}
+#my-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 10px white;
+  border: 3px solid white;
+}
+
+.text {
+ 
+  padding: 10px;
+  width: 65%;
+  height: inherit;
+  margin: auto;
+  font-family: "Lisu Bosa", serif;
+  text-align: justify;
+  color: rgb(99, 99, 99);
+  line-height: 28px;
+  font-weight: 100;
+  font-size: 1.7rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 410px) {
+  #my-image {
+    height: 50% !important;
+    width: 60% !important;
+    margin-top: 20px !important;
+    opacity: 0.9;
+  }
+  #my-name .list li a {
+    margin-top: 600px !important;
+  }
+  #my-name {
+    margin-top: 90px !important;
+  }
+  #my-name h1 {
+    font-size: 41px !important;
+  }
+  html {
+    font-size: 15px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+.sec-heading {
+  font-weight: 800;
+  justify-content: center;
+  align-content: center;
+  text-decoration: double;
+  color: rgb(0, 57, 122);
+}
+
+
+.skills-display {
+  
+  height: auto;
+  width: 75%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 10%;
+}
+
+.skills-progress {
+  border-radius: 20px;
+  width: 9rem;
+  height: 2rem;
+  background-color: lightgrey;
+  box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+  margin: 50px;
+ 
+}
+.skill-progress > div {
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.percentage {
+  border-radius: 20px;
+  height: 2rem;
+  width: 85%;
+  background-color: rgb(32, 32, 236);
+}
+
+.skill-name span {
+  color: white;
+  padding: 10px;
+  padding-top: 5px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.new-percentage {
+  border-radius: 20px;
+  width: 70%;
+  height: inherit;
+  background-color: blueviolet;
+}
+#js {
+  border-radius: 20px;
+  width: 40%;
+  height: inherit;
+  background-color: chocolate;
+}
+#oop {
+  border-radius: 20px;
+  width: 85%;
+  height: inherit;
+  background-color: rgb(210, 30, 129);
+}
+#dsa {
+  border-radius: 20px;
+  width: 65%;
+  height: inherit;
+  background-color: rgb(36, 210, 30);
+}
+#dbms {
+  border-radius: 20px;
+  width: 80%;
+  height: inherit;
+  background-color: rgb(30, 210, 150);
+}
+#html {
+  border-radius: 20px;
+  width: 80%;
+  height: inherit;
+  background-color: rgb(255, 167, 5);
+}
+
+@media screen and (max-width: 300px) {
+  .skills-progress {
+    overflow-x: hidden;
+    font-size: small;
+
+  }
+  .skill-name span {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+.timeline {
+  position: relative;
+
+  width: 75%;
+  margin: auto;
+}
+.timeline-cointainer {
+  position: relative;
+  margin: 5px;
+  left: 5px;
+  width: 40%;
+  min-height: 150px;
+}
+.timeline-cointainer:nth-child(2n) {
+  left: 53%;
+}
+.timeline-divider {
+  
+  position: absolute;
+  height: 75%;
+  width: 0%;
+  border: 1px dashed black;
+  top: 10%;
+  left: 50%;
+}
+
+.timeline-logo img {
+  height: 70px;
+  width: 70px;
+}
+.timeline-designation {
+  font-size: 1.4rem;
+  color: seagreen;
+  font-family: "Fredericka the Great", sans-serif;
+  margin-left: 8vw;
+  text-align: end;
+}
+.timeline-name {
+  margin: 5px 0 0;
+  color: #eb822d;
+  font-weight: 400;
+  font-family: "Graduate", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 8vw;
+  text-align: end;
+}
+.timeline-duration {
+  color: #9e9b9b;
+  font-weight: 100;
+  color: grey;
+  font-size: 1rem;
+  margin-left: 8vw;
+  text-align: end;
+}
+.timeline-description {
+  font-size: 20px;
+  padding: 2px;
+  color: grey;
+  line-height: 20px;
+
+  text-align: end;
+}
+.timeline-divider .timeline-traveller {
+  position: sticky;
+  top: 135px;
+  z-index: 2;
+}
+.timeline-divider .loation-dot {
+  position: fixed;
+  top: 25%;
+  z-index: 1;
+}
+.timeline-divider .loation-dot2 {
+  position: fixed;
+  top: 150%;
+  z-index: 1;
+}
+
+.timeline-divider i {
+  font-size: 30px;
+  transform: rotate(90deg);
+  margin-top: -35px;
+  display: block;
+  color: #2857a4;
+}
+
+@media screen and (max-width: 400px) {
+  .timeline-divider {
+    left: 6%;
+  }
+  .timeline-cointainer {
+    left: 12% !important;
+  }
+}
+
+#portfolio {
+  background-image: linear-gradient(#bff098, #6fd6ff) !important;
+}
+h2 span {
+  font-size: 2rem;
+}
+#portfolio-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0 50px;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+
+.portfolio-image-container {
+  max-width: 250px;
+  overflow: hidden;
+  margin: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.portfolio-image-container img {
+  width: 100%;
+  height: 100%;
+
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.image-cont {
+  
+  display: flex;
+  overflow: hidden;
+  width: 300px;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 40px;
+}
+.image-cont img {
+  width: 100%;
+  height: 80%;
+}
+
+.portfolio-details {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  color: transparent;
+  text-align: center;
+  padding: 10px;
+}
+.image-cont:hover {
+  box-shadow: 10px 10px 10px 10px #74adc8;
+  cursor: pointer;
+}
+.portfolio-image-container:hover {
+  box-shadow: 10px 10px 10px 10px #74adc8;
+  cursor: pointer;
+}
+.image-cont:hover .portfolio-details {
+  color: white;
+  background-color: #80808078;
+}
+.portfolio-details p {
+  font-size: 30px;
+}
+#contact {
+  background-image: linear-gradient(rgb(26, 35, 119), rgb(184, 184, 199));
+  color: azure;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  box-sizing: border-box;
+  width: 80%;
+  display: flex;
+  margin: 50px auto;
+}
+.contact-me {
+  flex-basis: 60%;
+  margin-right: 20px;
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  padding: 40px 60px;
+
+  overflow: hidden;
+}
+.contact-me h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.get-in-touch {
+  text-align: start;
+  width: 50%;
+  background-color: #422ca0;
+  flex-basis: 40%;
+  padding: 40px;
+  height: 20%;
+}
+.get-in-touch p {
+  display: flex;
+  align-items: flex-start;
+  width: 75%;
+  text-align: justify;
+  margin-bottom: 90px;
+  overflow: hidden;
+}
+.form input {
+  width: 75%;
+
+  margin: auto;
+
+}
+.input-row {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.input-row .input-grp {
+  flex-basis: 45%;
+}
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(19, 15, 15);
+  padding: 10px;
+}
+.textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #110606;
+  outline: none;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  /* color:blue; */
+  background-color: rgb(44, 19, 19);
+}
+
+lable {
+  margin-bottom: 6px;
+  display: block;
+  color: black;
+  font-weight: 700;
+}
+button {
+ 
+  background: none;
+  cursor: pointer;
+  display: flex;
+  width: 90px;
+  border-radius: 20px;
+  margin-top: 30px;
+  outline: none;
+  padding-left: 20px;
+  background-color: blue;
+  color: white;
+}
+button:hover {
+  font-size: 1rem;
+  transition: 0.2s ease-in;
+  box-shadow: 5px white;
+}
+.phone i {
+  text-align: start;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .container {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .social-icons {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .list li a {
+    width: 100%;
+  }
+  nav .list li {
+    width: 100%;
+    float: right;
+    margin: -10px !important;
+    padding: -10px !important;
+  }
+  nav .list li a {
+    font-size: 18px !important;
+    margin-right: 100px;
+  }
+  .nav {
+    width: 100%;
+  }
+  .nav li {
+    width: 100%;
+    float: none;
+  }
+
+  .social-icons li a {
+    text-decoration: none !important;
+    float: right;
+    margin-top: -55px !important;
+  }
+}
+
+.text-highlight {
+  color: #2857a4;
+  font-weight: 600;
+}
+
