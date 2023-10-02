@@ -178,6 +178,11 @@ section:nth-child(2n + 1) {
   body {
     overflow-x: hidden;
   }
+    .text{
+    font-size: 1.1rem !important;
+    width: 90%;
+  }
+}
 }
 .sec-heading {
   font-weight: 800;
@@ -557,6 +562,9 @@ button:hover {
   }
   .get-in-touch{
     width: 85%;
+  }
+  .get-in-touch p{
+    width: 90%;
   }
 }
 
