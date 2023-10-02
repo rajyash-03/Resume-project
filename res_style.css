@@ -154,12 +154,12 @@ section:nth-child(2n + 1) {
   margin-bottom: 60px;
   padding-bottom: 30px;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 410px) {
   #my-image {
     height: 50% !important;
     width: 60% !important;
-    margin-top: 30px !important;
-    opacity: 0.9;
+/*     margin-top: 30px !important;
+    opacity: 0.9; */
   }
   #my-name .list li a {
     margin-top: 60px !important;
@@ -605,6 +605,14 @@ button:hover {
     text-decoration: none !important;
     float: right;
     margin-top: -55px !important;
+  }
+}
+@media  screen and (max-width: 410px){
+  .social-icons li a {
+    text-decoration: none !important;
+    float: right;
+    margin-top: -100px !important;
+    /* display: inline!important; */
   }
 }
 
