@@ -545,6 +545,20 @@ button:hover {
 .phone i {
   text-align: start;
 }
+@media screen and (max-width: 900px) {
+  .container {
+    display: block;
+    overflow-x: hidden;
+    
+  }
+  .contact-me{
+    width: 85%;
+    overflow-x: hidden;
+  }
+  .get-in-touch{
+    width: 85%;
+  }
+}
 
 
 
@@ -555,11 +569,7 @@ button:hover {
 }
 
 
-@media screen and (max-width: 600px) {
-  .social-icons {
-    margin-bottom: 50px;
-  }
-}
+
 
 @media only screen and (max-width: 400px) {
   .list li a {
